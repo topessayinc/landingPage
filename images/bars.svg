@@ -1,0 +1,17 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="50" width="50" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E44D26;}
+	.st1{fill:#F16529;}
+	.st2{fill:#EBEBEB;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="XMLID_1_">
+	<rect height="80" width="500" x="0" y="50" rx="20" ry="50"></rect>
+	<rect height="80" width="500" x="0" y="200" rx="20" ry="50"></rect>
+	<rect height="80" width="500" x="0" y="350" rx="20" ry="50" > </rect>
+	
+	<!-- <circle r="60" cx="95" cy="90" />
+	<circle r="60" cx="95" cy="250" />
+	<circle r="60" cx="95" cy="410" /> -->
+</g>
+</svg>

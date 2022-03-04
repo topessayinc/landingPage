@@ -1,0 +1,49 @@
+/* darkmode theme */
+@media (prefers-color-scheme: dark){
+    *{
+     color: rgb(255,255,255);
+    }
+
+    /* scroll bar */
+    .testimonials-content::-webkit-scrollbar-thumb{ background: biege; }
+    nav, header, div, p, section, .container, body{background-color: #02090f;}
+    nav li:hover{ background-color: #071625;}
+    form, form *{background-color: #010046;}
+    @media screen and (min-width:768px){
+        .coverage-item{ background-color: rgb(3, 66, 66); box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.3);}
+    }
+    .try-it-btn{ background-color: blue; color: white; box-shadow: 0rem .2rem  .5rem .3rem rgba(0, 0, 0, 0.253);}
+    #price-calc{ color:rgb(162, 234, 252);}
+    .writting-mode, .space-count{ background-color: black; border-radius: .5rem .5rem 0rem 0rem; padding-bottom: 0rem;}
+    input, select { background-color: rgba(0, 0, 0, 0.329);}
+    footer, footer *, .footer-container{ background-color: black; color:white;
+     font-weight: 500;}
+    
+
+     /* plagiarism */
+     #plagiarism small{ background-color: rgb(1, 52, 83);}
+}
+
+/* light mode theme */
+@media (prefers-color-scheme: light){
+    *{  color: #071625;}
+    .testimonials-content::-webkit-scrollbar-thumb{ background: rgb(2, 26, 32); }
+    nav, header, div, p, section, article, .container, body{ background-color: beige;}
+    nav li:hover{ background-color: rgb(207, 201, 192);}
+    form , form * { background-color: bisque;}
+    @media screen and (min-width:768px){
+        .coverage-item{ background-color: azure; box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);}
+    }
+    .try-it-btn{ background-color: rgb(2, 2, 87); color: white; box-shadow: 0rem .2rem  .5rem .3rem rgba(0, 0, 0, 0.253);}
+    #price-calc{ color: rgb(2, 3, 94);}
+    .writting-mode, .space-count{ background-color: white; border-radius: .5rem .5rem 0rem 0rem; padding-bottom: 0rem;}
+    input, select { background-color: rgba(255, 255, 255, 0.329);}
+    footer, footer *, .footer-container{ background-color: rgb(2, 2, 87); color:white;
+     font-weight: 500;}
+    
+
+     /* plagiarism */
+     #plagiarism small{ background-color: rgb(66, 178, 248);}
+}
+
+.shadowy-figure{box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, .3);}

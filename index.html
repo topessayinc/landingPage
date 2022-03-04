@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer Essays</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/styles.js" defer></script>
+    <script src="scripts/math.js" defer></script>
+</head>
+<body>
+    <nav>
+       <div class="container">
+        <div class="brand-details">
+            <img src="images/logo.svg" alt="" id="my-logo">
+            <h4 class="brand-name">Top essay inc</h4>
+        </div>
+        <div class="mb-option-list hidden" id="mb-expand-menu">
+            <ul>
+                <li id="home-option">Home</li>
+                <li id="services-option">Services</li>
+                <li id="about-option">About</li>
+                <li id="contact-option">Contact</li>
+                <button class="try-it-btn" id="nav-try-it">Order</button>
+            </ul>
+            
+        </div>
+        
+        <div class="mb nav-butons" >
+           <img src="images/cancel.svg"  id="cancel-btn" alt="" class="hidden">
+            <img src="images/expand.svg" alt="" id="expand-menu" class="">
+        </div>
+       </div>
+    </nav> 
+    <section id="home">
+        <div class="home-container">
+            <header>
+                <div class="container">
+                    <div class="header-content">
+                        <div class="header-left">
+                        
+                            <h1 class="big-title">
+                                Get Your Paper Done By Professionals
+                            </h1>
+                            <h3>
+                                For whatever article you want written, we have professionals to handle it.
+                            </h3>
+                            <p>
+                                At very affordable price you get the best writting service in the market
+                            </p>
+                        </div>
+                        <form action="/cost-calculator" id="calculate-cost">
+                            <h3>Calculate the price</h3>
+                            <div class="writting-mode">
+                                <label for="writting">Writting
+                                    <input class="radio" type="radio" name="writing-mode" id="writting" value="writting">
+                                </label>
+                                
+                                <label for="rewritting">Rewritting
+                                    <input class="radio" type="radio" name="writing-mode" id="rewritting" value="rewritting">
+                                </label>
+                                
+                                <label for="editting">Editting
+                                    <input class="radio" type="radio" name="writing-mode" id="editting" value="editting">
+                                </label>
+                                
+                            </div>
+                            <div class="selections">
+                                <select name="essay-type" id="essay-type">
+                                    <option value="a">Essay (Any Type)</option>
+                                    <option value="b">admission essay</option>
+                                    <option value="c">Arguementative essay</option>
+                                    <option value="d">College Application</option>
+                                    <option value="e">Analytical essay</option>
+                                    <option value="f">Descriptive essay</option>
+                                    <option value="g">Definition essay</option>
+                                    <option value="h">Extended Essay</option>
+                                    <option value="i">Dissertation</option>
+                                    <option value="j">Dissertation</option>
+                                    <option value="k">White Paper</option>
+                                    <option value="l">case Study</option>
+                                    <option value="m">book report</option>
+                                    <option value="n">Annotated bibliograhy</option>
+                                    <option value="o">Course Work</option>
+                                    <option value="p">Presentation or speech</option>
+                                    <option value="q">Research proposal</option>
+                                    <option value="r">Literature review</option>
+                                    <option value="s">Narrative essay</option>
+                                    <option value="t">Cause and effect study</option>
+                                    <option value="u">EPQ essay</option>
+                                    <option value="r">Expository essay</option>
+                                    <option value="s">Evalution essay</option>
+                                    <option value="t">Graduate essay</option>
+                                    <option value="u">Capstone essay</option>
+                                    <option value="v">thesis tatement</option>
+                                    <option value="w">Term paper</option>
+                                    <option value="x">Persuasive essay</option>
+                                    <option value="y">Research paper</option>
+                                    <option value="z">Reflective paper</option>
+                                    <option value="A">TOK essay</option>
+                                    <option value="B">Scholaship essay</option>
+                                    <option value="C">others</option>
+                                </select>
+                                <select name="education-level" id="education-level">
+                                    <option value="Highschool">High School</option>
+                                    <option value="college">College</option>
+                                    <option value="university">University</option>
+                                    <option value="masters">Mster's degree</option>
+                                    <option value="phd">Doctorate of philosophy</option>
+                                </select>
+                                <select name="duration" id="duration">
+                                    <option value="6">6 hours</option>
+                                    <option value="9">9 Hours</option>
+                                    <option value="12">12 hours</option>
+                                    <option value="15">15 hours</option>
+                                    <option value="18">18 hours</option>
+                                    <option value="21">21 hours</option>
+                                    <option value="24">24 hours</option>
+                                    <option value="48">48 hours</option>
+                                    <option value="72">3 days</option>
+                                    <option value="96">4 days</option>
+                                    <option value="120">5 days</option>
+                                    <option value="144">6 days</option>
+                                    <option value="336">2 weeks</option>
+                                    <option value="504">3 weeks</option>
+                                    <option value="720">1 month</option>
+                                </select>
+                            </div>
+    
+                            <div id="number-of-pages">
+                                
+                                <img id="pages-minus" src="images/minus.svg" alt="">
+                                <input type="number" name="no-of-pages" id="no-of-pages" placeholder="Number of pages">
+                                <img src="images/plus.svg" alt="" id="pages-plus">
+                            </div>
+                            <div class="space-count">
+                                <label for="double-space">
+                                <input type="radio" name="essay-spaces" id="double-space" class="radio" value="double">Double spaces
+                            </label>
+                            <label for="single-space">
+                                <input class="radio" type="radio" name="essay-spaces" id="single-space" value="single">Single space
+                            </label>
+                            </div>
+                            <div id="estimate-no-of-words">
+                                <label for="no-of-words">
+                                    Number of words
+                                    <input type="text" id="no-of-words">
+                                </label>
+                            </div>
+                            <div id="estimate-price"> $<span id="price-calc"></span></div>
+                            <button class="try-it-btn">Write My paper</button>
+                        </form>
+                    </div>
+                </div>
+            </header>
+
+            <div id="ratings">
+                <div class="container">
+                    <article>
+                        <img src="images/stars-fb.svg" alt="">
+                        <h4 class="rating-info">Site Jabber</h4>
+                        <h4 class="rating-figure">4.7 Rating</h4>
+                    </article>
+                    <article>
+                        <img src="images/stars-review.svg" alt="">
+                        <h4 class="rating-info">Trust pilot</h4>
+                        <h4 class="rating-figure">4.5 Rating</h4>
+                    </article>
+                    <article>
+                        <img src="images/star.svg" alt="" height="12.5">
+                        <h4 class="rating-info">Essay Writers</h4>
+                        <h4 class="rating-figure">5.0 Rating</h4>
+                    </article>
+                </div>
+            </div>
+            <div id="plagiarism">
+                <div class="container">
+                    <div class="plg-left">
+                        <h3>Plagiarism free work</h3>
+                        <p>
+                            Papers are written from scratch, and only credible sources are used. Once your order is completed, it will be automatically checked for plagiarism with powerful detection software and manually double-checked for errors by QA managers.
+                        </p>
+                        <small>100% TURNITIN PASS</small>
+                    </div>
+                    <div class="plg-right">
+                        <img src="images/Screenshot 2022-03-04 17.39.56.png" alt="">
+                        <img src="images/Screenshot 2022-03-04 17.41.26.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="coverage">
+                <div class="container">
+                    <h2>What our writers are capable of</h2>
+                <p class="coverage-info">
+                    Dont worry about what our writters can handle because they are well trained for a vast majority of fiellds including
+                </p>
+                <li class="coverage-item">Creative writting</li>
+                <li class="coverage-item">Reflective writting</li>
+                <li class="coverage-item">Thesis / Dissertation</li>
+                <li class="coverage-item">Book / Movie review</li>
+                <li class="coverage-item">Critical thinking review</li>
+                <li class="coverage-item">report</li>
+                <li class="coverage-item">editting and proof reading</li>
+                <li class="coverage-item">multiple choice questions</li>
+                <li class="coverage-item">research proposal</li>
+                <li class="coverage-item">annotated bibliogrphy</li>
+                <li class="coverage-item">course work</li>
+                <li class="coverage-item">presentation / speech</li>
+                <li class="coverage-item">term paper</li>
+                <li class="coverage-item">Article review</li>
+                <li class="coverage-item">custom essay </li>
+                <li class="coverage-item">Business plan</li>
+                <li class="coverage-item">Literature review</li>
+                <li class="coverage-item">Research paper</li>
+                <li class="coverage-item">Admission Essay</li>
+                <li class="coverage-item">Case study</li>
+                <li class="coverage-item">Narrative Essay</li>
+                <li class="coverage-item">Arguemantative essay </li>
+                <li class="coverage-item">Analytical essay </li>
+                <li class="coverage-item">Descriptive essay</li>
+                <li class="coverage-item">Extended essay</li>
+                <li class="coverage-item">Persuasive / Expository essay</li>
+                <li class="coverage-item">Evaluation essay</li>
+                <li class="coverage-item">Cause and effect essay</li>
+                <button class="try-it-btn">place order</button>
+                </div>
+            </div>
+            <div class="market">
+                <div class="container">
+                    <div id="market-offer">
+                        <h1>Place your order</h1>
+                        <li><strike>$14.00</strike> Revisions</li>
+                        <li><strike>$16.00</strike> Formating</li>
+                        <li><strike>$7.00</strike> Outline</li>
+                        <button class="try-it-btn">Place order</button>
+                    </div>
+                    <div id="market-discount">
+                        <h2>FREE </h2>
+                        <h3>EVERYDAY GIFT</h3>
+                        <h2>15% OFF</h2>
+                        <p>Tight on budget? Get 15% off your first order</p>
+                    </div>
+                </div>
+            </div>
+            <div id="guide">
+                <div class="container">
+                    <h2>How it works</h2>
+                <div class="guide-details">
+                    <article class="guide-temp">
+                        <div>
+                            <h4>Place your order</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit dicta maiores nam eos ut modi, dolores corrupti, doloremque libero harum delectus blanditiis!</p>
+                        </div>
+                        <img src="images/Screenshot 2022-03-04 17.39.56.png" alt="">
+                    </article>
+                    <article class="guide-temp">
+                        <div>
+                            <h4>Place your order</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit dicta maiores nam eos ut modi, dolores corrupti, doloremque libero harum delectus blanditiis!</p>
+                        </div>
+                        <img src="images/Screenshot 2022-03-04 17.41.26.png" alt="">
+                    </article>
+                    <article class="guide-temp">
+                        <div>
+                            <h4>Place your order</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit dicta maiores nam eos ut modi, dolores corrupti, doloremque libero harum delectus blanditiis!</p>
+                        </div>
+                        <img src="images/objective-1.svg" alt="">
+                    </article>
+    
+                </div>
+                
+                <h2>Why us</h2>
+                <div class="why-us-container">
+                    <article class="why-us">
+                    <h4>Qualified writters</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat perspiciatis quod delectus eos harum illum consequuntur eligendi vero voluptas, officiis id odio. Tempore cumque hic dolores architecto nostrum aspernatur dolorum reprehenderit doloribus adipisci!</p>
+                </article>
+                <article class="why-us">
+                    <h4>Qualified writters</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat perspiciatis quod delectus eos harum illum consequuntur eligendi vero voluptas, officiis id odio. Tempore cumque hic dolores architecto nostrum aspernatur dolorum reprehenderit doloribus adipisci!</p>
+                </article>
+                <article class="why-us">
+                    <h4>Qualified writters</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat perspiciatis quod delectus eos harum illum consequuntur eligendi vero voluptas, officiis id odio. Tempore cumque hic dolores architecto nostrum aspernatur dolorum reprehenderit doloribus adipisci!</p>
+                </article>
+                <article class="why-us">
+                    <h4>Qualified writters</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat perspiciatis quod delectus eos harum illum consequuntur eligendi vero voluptas, officiis id odio. Tempore cumque hic dolores architecto nostrum aspernatur dolorum reprehenderit doloribus adipisci!</p>
+                </article>
+                </div>
+
+                <div class="experts">
+                    <h2>Our expersts</h2>
+                    <div class="experts-imgs">
+                        <img src="images/icon-1.svg" alt="">
+                        <img src="images/icon-2.svg" alt="" class="active">
+                        <img src="images/icon-3.svg" alt="">
+                    </div>
+                    <div class="experts-info">
+                        <article class="expert">
+                            <h4>Expert Name</h4>
+                            <p>More about the expert Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente enim error quae assumenda autem eveniet ipsam debitis veritatis, odio illum unde nulla.</p>
+                        </article>
+                        <article class="expert">
+                            <h4>Expert Name</h4>
+                            <p>More about the expert Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente enim error quae assumenda autem eveniet ipsam debitis veritatis, odio illum unde nulla.</p>
+                        </article>
+                        <article class="expert">
+                            <h4>Expert Name</h4>
+                            <p>More about the expert Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente enim error quae assumenda autem eveniet ipsam debitis veritatis, odio illum unde nulla.</p>
+                        </article>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="faq">
+                <div class="container">
+                    <h2>Frequently asked questions</h2>
+                    <div class="qas">
+                     <article class="question">
+                         <p class="q">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam.</p>
+                         <div class="qa-btn">
+                             <button class="plus-sign"><img src="images/direction_down.svg" alt=""></button>
+                             <button class="minus-sign hide"><img src="images/direction_right.svg" alt=""></button>
+                         </div>
+                         <p class="a hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab quibusdam fuga. A, itaque dolor debitis explicabo ad eos, architecto aliquid officiis sed cupiditate placeat.</p>
+                     </article>
+                     <article class="question">
+                         <p class="q">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam.</p>
+                         <div class="qa-btn">
+                             <button class="plus-sign"><img src="images/direction_down.svg" alt=""></button>
+                             <button class="minus-sign hide"><img src="images/direction_right.svg" alt=""></button>
+                         </div>
+                         <p class="a  hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab quibusdam fuga. A, itaque dolor debitis explicabo ad eos, architecto aliquid officiis sed cupiditate placeat.</p>
+                     </article>
+                     <article class="question">
+                         <p class="q">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam.</p>
+                         <div class="qa-btn">
+                             <button class="plus-sign"><img src="images/direction_down.svg" alt=""></button>
+                             <button class="minus-sign hide"><img src="images/direction_right.svg" alt=""></button>
+                         </div>
+                         <p class="a hide" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab quibusdam fuga. A, itaque dolor debitis explicabo ad eos, architecto aliquid officiis sed cupiditate placeat.</p>
+                     </article>
+                     <article class="question">
+                         <p class="q">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam.</p>
+                         <div class="qa-btn">
+                             <button class="plus-sign"><img src="images/direction_down.svg" alt=""></button>
+                             <button class="minus-sign hide"><img src="images/direction_right.svg" alt=""></button>
+                         </div>
+                         <p class="a  hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab quibusdam fuga. A, itaque dolor debitis explicabo ad eos, architecto aliquid officiis sed cupiditate placeat.</p>
+                     </article>
+                     <article class="question">
+                         <p class="q">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam.</p>
+                         <div class="qa-btn">
+                             <button class="plus-sign"><img src="images/direction_down.svg" alt=""></button>
+                             <button class="minus-sign hide"><img src="images/direction_right.svg" alt=""></button>
+                         </div>
+                         <p class="a  hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab quibusdam fuga. A, itaque dolor debitis explicabo ad eos, architecto aliquid officiis sed cupiditate placeat.</p>
+                     </article>
+                     <article class="question">
+                         <p class="q">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam.</p>
+                         <div class="qa-btn">
+                             <button class="plus-sign"><img src="images/direction_down.svg" alt=""></button>
+                             <button class="minus-sign hide"><img src="images/direction_right.svg" alt=""></button>
+                         </div>
+                         <p class="a  hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ab quibusdam fuga. A, itaque dolor debitis explicabo ad eos, architecto aliquid officiis sed cupiditate placeat.</p>
+                     </article>
+                    </div>
+                </div>
+            </div>
+            <div id="testimonials">
+                <div class="container">
+                    <h2>
+                        Testimonials from our clients
+                    </h2>
+                    <div class="testimonials-content">
+                        <article class="testimony">
+                            <h3>Client ID 0x12fca4</h3>
+                            <img src="images/bbb.svg" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet velit reprehenderit, asperiores adipisci provident.
+                            </p>
+    
+                            <div class="stars">
+                                <p>Rating 5/5</p>
+                                <img src="images/star.svg" alt="">
+                            </div>
+                        </article>
+                        <article class="testimony">
+                            <h3>Client ID 0x12fca4</h3>
+                            <img src="images/bbb.svg" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet velit reprehenderit, asperiores adipisci provident.
+                            </p>
+    
+                            <div class="stars">
+                                <p>Rating 5/5</p>
+                                <img src="images/star.svg" alt="">
+                            </div>
+                        </article>
+                        <article class="testimony">
+                            <h3>Client ID 0x12fca4</h3>
+                            <img src="images/bbb.svg" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet velit reprehenderit, asperiores adipisci provident.
+                            </p>
+    
+                            <div class="stars">
+                                <p>Rating 5/5</p>
+                                <img src="images/star.svg" alt="">
+                            </div>
+                        </article>
+                        <article class="testimony">
+                            <h3>Client ID 0x12fca4</h3>
+                            <img src="images/bbb.svg" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet velit reprehenderit, asperiores adipisci provident.
+                            </p>
+    
+                            <div class="stars">
+                                <p>Rating 5/5</p>
+                                <img src="images/star.svg" alt="">
+                            </div>
+                        </article>
+                        <article class="testimony">
+                            <h3>Client ID 0x12fca4</h3>
+                            <img src="images/bbb.svg" alt="">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet velit reprehenderit, asperiores adipisci provident.
+                            </p>
+    
+                            <div class="stars">
+                                <p>Rating 5/5</p>
+                                <img src="images/star.svg" alt="">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-container">
+        <div>
+            <h1 class="brand-name">Writter Essay</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eius rerum aliquid similique doloremque alias.</p>
+        </div>
+        <div id="socials">
+            <h4>Socials</h4>
+            <li>Facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+        </div>
+
+        <div id="permalinks">
+            <h4>Permalinks</h4>
+            <a href="#about">About</a>
+            <a href="#classes">Online classes</a>
+            <a href="#guide">How it works</a>
+            <a href="#blog">Blog</a>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <a href="#faq">faqs</a>
+            <a href="#contact">Contact</a>
+            <a href="#services">Services</a>
+            <a href="#policies">Policies</a>
+        </div>
+        </div>
+
+    </footer>
+    <small>&copy topessayinc 2022. All rights reserved. </small>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<div id="message" class="hidden">
+        <div id="message-content">
+            Hello there builder
+        </div>
+        <h1>
+            <div id="close-msg-box">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </h1>
+    </div>
+<script>
+  function message(information, background, color){
+            let msgBox = document.getElementById("message");
+            let msgDisplay = document.getElementById("message-content");
+            msgDisplay.innerText=information;
+            msgDisplay.style.color=color;
+            msgBox.style.color = color;
+            msgBox.style.backgroundColor= background;
+            msgBox.classList.remove("hidden");
+            setTimeout(()=>{
+                msgBox.classList.add("hidden");
+            }, 5000);
+        }
+
+        function warn(msg){
+            message(msg, '#dcc334', "black");
+        }
+
+        function inform(msg){
+            message(msg, 'blue', 'white');
+        }
+
+        function error(msg){
+            message(msg, 'red', 'black');
+        }
+</script>
+<style>
+  #message{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: fit-content;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    transition: ease 400ms;
+    z-index: 200;
+}
+#message-content{
+    text-align: center;
+}
+</style>
